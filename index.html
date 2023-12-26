@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Play Games At JolWorld Beta</title>
+    <img src="Logo.png" alt="Wow! You Made it Here! You Proffessonal!>
+    <img src="Loginguest.png" alt="">
+</head>
+<body>
+    <img src="LoginGuest.png" alt="">
+	<form>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username"><br><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password"><br><br>
+		<input type="button" value="Submit" onclick="validate()">
+	</form>
+
+	<script>
+		function validate() {
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+
+			if (username == "Guest" && password == "Test") {
+				window.location.href = "Guest_Page.html";
+			} else {
+				alert("Wrong Username or Password");
+			}
+		}
+	</script>
+</body>
+</html>
